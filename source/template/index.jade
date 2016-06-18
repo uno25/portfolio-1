@@ -1,27 +1,27 @@
 doctype html
 html
 	include common/_head
-	body.fluid-bg
+	body.body.body_main-page
 		<!--[if lt IE 7]>
 		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
 		<![endif]-->
 		.wrapper
 			.maincontent
-				header.header
+				header.header.header_main-page
 					.authorization
 						a(href="login.html").authorization__link Авторизоваться
-				main.main
-					.container
-						.content
+				main.main.main_main-page
+					.container.container_main-page
+						.content.content_main-page
 							.push
 							.ava
 								img(src="../assets/img/1800_ava.jpg", alt="my avatar").ava_img
 							.presentation
 								.presentation_name Владимир Слепков
-								.presentation_site.opacity-8 Личный сайт разработчика
+								.presentation_site Личный сайт разработчика
 							.socials
-								ul.socials__list.opacity-7
-									li.socials__item.item_left
+								ul.socials__list
+									li.socials__item
 										a(href="https://vk.com/vladimir_slepkov").socials__link.socials__link_vk
 											img(src="../assets/img/vk.svg", alt="VK")
 									li.socials__item
@@ -30,7 +30,7 @@ html
 									li.socials__item
 										a(href="ru.linkedin.com/in/slepkov").socials__link.socials__link_in
 											img(src="../assets/img/in.svg", alt="LinkedIn")
-							nav.nav
+							nav.nav.nav_main-page
 								ul.nav__list
 									li.nav__item.item_1
 										a(href="works.html").nav__link Мои работы
@@ -38,6 +38,6 @@ html
 										a(href="about.html").nav__link Обо мне
 									li.nav__item.item_3
 										a(href="blog.html").nav__link Блог
-		footer.footer
+		footer.footer.footer_main-page
 			.container
 				.footer__content &copy; Владимир Слепков | Создано с любовью в LoftSchool | 2016
