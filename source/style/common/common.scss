@@ -1,17 +1,16 @@
 // BODY STYLES
 * {
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
 body {
 	font: 100%/1.5em Arial, Helvetica, sans-serif;
 	color: #fff;
-	box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -19,13 +18,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 ul {
-	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
 }
 
 a {
 	text-decoration: none;
 	color: #fff;
 	display: block;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 //FONTS
@@ -51,3 +66,11 @@ a {
 	font-family: "Roboto Bold", sans-serif;
 	src: url(../assets/fonts/roboto-bold.ttf);
 }
+
+@font-face {
+	font-family: "Sansus Webissimo", sans-serif;
+	src: url(../assets/fonts/Sansus-Webissimo-Regular.ttf);
+}
+
+
+

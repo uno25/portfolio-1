@@ -1,0 +1,53 @@
+doctype html
+html
+	include common/_head
+	body.body.body_main-page
+		<!--[if lt IE 7]>
+		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+		<![endif]-->
+		.wrapper
+			.maincontent
+				main.main.main_main-page
+					.container.container_main-page
+						.content.content_main-page.content_login-page
+							.authorize
+								.authorize_list
+									.authorize_item.circle-small
+									.authorize_item.circle-big
+									.authorize_item.text Авторизуйтесь
+									.authorize_item.circle-big
+									.authorize_item.circle-small
+							.form-box
+								.form-box__login
+									form.form-login(action="")
+										.login_icon
+										input.login_input(type="text" name="" id="" placeholder="Логин")
+								.form-box__password
+									form.form-password(action="")
+										.password_icon
+										input.password_input(type="password" name="" id="" placeholder="Пароль" checked)
+							.checkbox-section
+								input.checkbox(type="checkbox" id="checkbox" checked)
+								label.checkbox_label(for="checkbox" )
+									span.checkbox_span
+									.human Я человек
+							.robot-box
+								.question Вы точно не робот?
+								.answers
+									.yes-box
+										input(type="radio" name="yes" value="yes")
+										.wrap Да
+									.no-box
+										input(type="radio" name="no" value="no")
+										.wrap Не уверен
+							nav.nav.nav_login-page
+								ul.nav__list
+									li.nav__item.nav__item_login-page.item_1
+										a(href="index.html").nav__link На главную
+									li.nav__item.nav__item_login-page.item_2
+										input(type="submit" name="submit" value="Войти")
+										.wrap Войти
+			.empty_main-page
+		footer.footer.footer_main-page
+			.container
+				.footer__content &copy; Владимир Слепков | Создано с любовью в LoftSchool | 2016

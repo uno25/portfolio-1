@@ -71,7 +71,7 @@
 }
 
 .presentation_site {
-	font-family: "Roboto Medium";
+	font-family: "Roboto";
 	font-size: 1rem;
 	opacity: 0.8;
 }
@@ -125,10 +125,6 @@
 
 //footer
 
-.wrapper {
-	min-height: 100%;
-}
-
 .maincontent_main-page {
 	padding-bottom: 60px;
 }
@@ -139,15 +135,139 @@
 	font-family: "Roboto Light";
 	font-size: 1rem;
 	text-align: center;
+	position: relative;
+}
+
+.empty_main-page {
+	height: 60px;
 }
 
 //LOGIN PAGE STYLES
 
+// content
 
-.footer_login-page {
-	font-family: "Roboto Light";
-	font-size: 1rem;
-	height: 100px;
-	margin-top: -100px;
-	text-align: center;
+.content_login-page {
+	margin-top: 100px;
+	padding-top: 30px;
+}
+
+// authorize
+
+.authorize_item {
+	display: inline-block;
+}
+
+.text {
+	font: 2.1875rem 'Sansus Webissimo', sans-serif;
+	text-transform: uppercase;
+}
+
+.circle-small {
+	margin-bottom: 9px;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #fff;
+	opacity: 0.4;
+}
+
+.circle-big {
+	margin-bottom: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	opacity: 0.4;
+}
+
+// forms
+
+.form-box__login, .form-box__password {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.login_icon, .password_icon {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: absolute;
+	left: 19px;
+	top: 0;
+}
+
+.login_icon {
+	background: url("../img/login.svg") 15px 15px no-repeat #f0efe9;
+}
+
+.password_icon {
+	background: url("../img/password.svg") 15px 15px no-repeat #f0efe9;
+}
+
+.login_input, .password_input {
+	display: inline-block;
+	width: 340px;
+	height: 45px;
+	border-radius: 5px;
+	padding-left: 63px;
+	font: 1rem 'Roboto', sans-serif;
+	color: #373e42;
+	border: 0 none;
+	outline: none;
+}
+
+// checkbox
+
+input[type="checkbox"] {
+	display:none;
+}
+
+input[type="checkbox"] + label span {
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 1px 1px 1px 1px;
+	background-color: #e7a731;
+	cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+	background: url("../img/check.svg") 50% 50% no-repeat #e7a731;
+	background-size: 70%;
+}
+
+.checkbox_label {
+	font: 1rem 'Roboto', sans-serif;
+	position: relative;
+}
+
+.human {
+	display: inline;
+	padding-top: 5px;
+	margin-left: 20px;
+}
+
+// robot
+
+.yes-box, .no-box {
+	display: inline-block;
+}
+
+// menu
+
+.nav_login-page {
+	font-family: "Roboto";
+	font-size: 0;
+	background-color: #efab26;
+}
+
+.nav__item_login-page {
+	width: 190px;
+	border-left: 2px solid #e2c58c;
+}
+
+.item_1 {
+	border: none;
 }
