@@ -36,23 +36,23 @@ p {
 /* Fonts Styles */
 @font-face {
   font-family: "Roboto Light", sans-serif;
-  src: url(../assets/fonts/roboto-light.ttf); }
+  src: url(../fonts/roboto-light.ttf); }
 
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(../assets/fonts/roboto-regular.ttf); }
+  src: url(../fonts/roboto-regular.ttf); }
 
 @font-face {
   font-family: "Roboto Medium", sans-serif;
-  src: url(../assets/fonts/roboto-medium.ttf); }
+  src: url(../fonts/roboto-medium.ttf); }
 
 @font-face {
   font-family: "Roboto Bold", sans-serif;
-  src: url(../assets/fonts/roboto-bold.ttf); }
+  src: url(../fonts/roboto-bold.ttf); }
 
 @font-face {
   font-family: "Sansus Webissimo", sans-serif;
-  src: url(../assets/fonts/Sansus-Webissimo-Regular.ttf); }
+  src: url(../fonts/Sansus-Webissimo-Regular.ttf); }
 
 .body_main-page {
   background: #eeddbf url("../img/1800_bg.jpg");
