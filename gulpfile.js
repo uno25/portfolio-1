@@ -32,6 +32,7 @@ $.gulp.task('default', $.gulp.series(
   ),
   $.gulp.parallel(
     'watch',
-    'serve'
+    'serve',
+    'copy.fonts'
   )
 ));

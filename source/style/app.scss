@@ -17,7 +17,7 @@
 }
 
 .authorization {
-	font-family: "Roboto Medium";
+	font-family: "robotomedium";
 	font-size: 16px;
 	float: right;
 	margin-top: 23px;
@@ -30,7 +30,7 @@
 
 .authorization__link {
 	display: block;
-	margin-top: 10px;
+	margin-top: 8px;
 	margin-left: 25px;
 	width: 80%;
 	height: 80%;
@@ -65,13 +65,13 @@
 }
 
 .presentation_name {
-	font-family: "Roboto Medium";
+	font-family: "robotomedium";
 	font-size: 1.75rem;
 	margin-bottom: 8px;
 }
 
 .presentation_site {
-	font-family: "Roboto";
+	font-family: "robotoregular";
 	font-size: 1rem;
 	opacity: 0.8;
 }
@@ -98,30 +98,47 @@
 // navigation
 
 .nav_main-page {
-	font-family: "Roboto";
-	font-size: 0;
+	font-family: "robotoregular";
 	background-color: #efab26;
 }
 
 .nav__list {
+	font-size: 0;
 	background-color: #e7a831;
 	height: 45px;
+	text-align: justify;
+	// .item_empty {
+	// 	width: 380px;
+	// }
 }
 
 .nav__item {
 	display: inline-block;
 	font-size: 1rem;
-	padding: 10px 31.1px 11px;
 	border-left: 2px solid #e2c58c;
-}
-
-.nav__item:hover {
-	background-color: #d18712;
 }
 
 .item_1 {
 	border: none;
+	width: 40.78947368421053%;
 }
+
+.item_2 {
+	width: 32.89473684210526%;
+}
+
+.item_3 {
+	width: 26.31578947368421%;
+}
+
+.nav__link {
+	padding: 10px 30px 10px;
+}
+
+.nav__link:hover {
+	background-color: #d18712;
+}
+
 
 //footer
 
@@ -132,7 +149,7 @@
 .footer_main-page {
 	height: 60px;
 	margin-top: -60px;
-	font-family: "Roboto Light";
+	font-family: "robotolight";
 	font-size: 1rem;
 	text-align: center;
 	position: relative;
@@ -158,7 +175,7 @@
 }
 
 .text {
-	font: 2.1875rem 'Sansus Webissimo', sans-serif;
+	font: 2.1875rem 'sansus_webissimoregular', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -239,7 +256,7 @@ input[type="checkbox"]:checked + label span {
 }
 
 .checkbox_label {
-	font: 1rem 'Roboto', sans-serif;
+	font: 1rem 'robotoregular', sans-serif;
 	position: relative;
 }
 
@@ -258,7 +275,7 @@ input[type="checkbox"]:checked + label span {
 // menu
 
 .nav_login-page {
-	font-family: "Roboto";
+	font-family: "robotoregular";
 	font-size: 0;
 	background-color: #efab26;
 }
@@ -270,4 +287,137 @@ input[type="checkbox"]:checked + label span {
 
 .item_1 {
 	border: none;
+}
+
+
+// BLOG STYLES
+
+.blog {
+	background-color: #faf8f0;
+
+	.maincontent {
+		padding-bottom: 147px;
+		font-size: 1rem;
+		height: 100%;
+	}
+
+	.main {
+		width: 1800px;
+	}	
+
+	// Header
+
+	.header {
+		height: 396px;
+		background: url('../img/1800_blog-bg.jpg') #ccc;
+		max-width: 100%;
+		background-size: cover;
+		margin-bottom: 65px;
+	}
+	
+	.content_left {
+		float: left;
+		width: 50%;
+		height: 396px;
+		fill: #faf8f0;
+		position: absolute;
+		top: 271px;
+		left: 0px;
+	}
+
+	.content_right {
+		float: right;
+		width: 50%;
+		height: 396px;
+		fill: #faf8f0;
+		position: absolute;
+		top: 244px;
+		left: 702px;
+	}
+
+	svg {
+		width: 100%;
+	}
+
+	.content_right {
+		float: right;
+		width: 50%;
+		height: 396px;
+		background: url('../img/about_bg_right.svg')  0 240px no-repeat;
+	}
+
+
+	// Aside
+
+	.aside {
+		width: 280px;
+		float: left;
+		text-align: right;
+		margin: 0 0px 0 112px;
+	}
+
+	.navigation_link {
+		font-family: 'robotobold';
+		color: #455a64;
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+	
+	.navigation_link.current {
+		color: #cd8920;
+		border-right: 3px solid #cd8920;
+		margin-bottom: 12px;
+		padding: 15px 20px 15px 0;
+	}
+
+	// Section
+
+	.section {
+		width: 880px;
+		float: left;
+		margin-left: 120px;
+	}
+
+	.article_item {
+		margin-bottom: 80px;
+	}
+
+	.article_heading {
+		font: 2.18875rem 'sansus_webissimoregular';
+		color: #5d5a55;
+		margin-bottom: 13px;
+	}
+
+	.article_time {
+		font: 1rem 'robotoregular';
+		color: #cd8920;
+		margin-bottom: 20px;
+	}
+
+	.article_text {
+		font: 1rem 'robotoregular';
+		color: #5d5a55;
+
+		p {
+			line-height: 1.63;
+			margin-bottom: 10px;
+		}
+	}
+
+	.footer {
+		height: 147px;
+		margin-top: -147px;
+		font-family: "robotomedium";
+		font-size: 1rem;
+		position: relative;
+		background-color: rgba(#373e42, 0.8);
+	}
+
+	.content_footer {
+		width: 1800px;
+	}
+
+	.empty {
+		height: 147px;
+	}
 }
